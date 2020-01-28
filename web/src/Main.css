@@ -1,0 +1,17 @@
+main {
+  flex: 1;
+}
+
+main ul {
+  display: grid;   /*Mejora el posicionamiento de los itens en tela*/
+  grid-template-columns: repeat(2, 1fr);
+  gap: 20px;  /*Distanciar las col y lineas con 20 px. Tambien si quiero mudar las col (column-gap) o lineas (row-gap)*/
+  list-style: none;  /*Eliminar balinhas q estan en el inicio*/
+}
+
+@media (max-width: 650px) {
+  main ul {
+    grid-template-columns: 1fr;
+  }
+}
+
